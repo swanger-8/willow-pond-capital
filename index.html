@@ -170,16 +170,14 @@
 
     /* ── MOBILE ── */
     @media (max-width: 768px) {
-      /* Use CSS background on html to prevent any black showing */
       html {
-        background: url('building.jpg') center/cover no-repeat fixed;
+        background: #0a0c0b;
         height: 100%;
       }
       body {
-        background: transparent;
+        background: #0a0c0b;
         min-height: 100%;
       }
-      /* Full screen image */
       .mobile-bg {
         display: block;
         position: fixed;
@@ -191,21 +189,16 @@
         object-position: center center;
         z-index: 0;
       }
-      /* Lighten overlay on mobile so image shows through */
       .video-wrap::after {
         background: linear-gradient(to bottom, rgba(5,14,8,0.25) 0%, rgba(5,14,8,0.20) 50%, rgba(5,14,8,0.35) 100%);
       }
-      /* Hide looping video */
       .video-wrap video { display: none; }
-      /* Hide desktop nav */
       nav { display: none; }
-      /* Hide company text and divider */
       .company-block { display: none; }
       .divider { display: none; }
-      /* Big centered logo right above office block */
       .mobile-center-logo {
         display: block;
-        width: 260px;
+        width: 320px;
         height: auto;
         filter: brightness(0) invert(1);
         margin-bottom: 16px;
