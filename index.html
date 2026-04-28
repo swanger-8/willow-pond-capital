@@ -180,19 +180,29 @@
       }
       .mobile-bg {
         display: block;
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
         object-fit: cover;
-      }
-      /* Hide company name on mobile */
-      .company-block {
-        display: none;
+        object-position: center center;
       }
       /* Hide divider on mobile */
       .divider {
         display: none;
+      }
+      .company-name {
+        font-size: 18px;
+        white-space: normal;
+        letter-spacing: 0.18em;
+        padding: 0 32px;
+        text-align: center;
+        line-height: 1.4;
+      }
+      .company-tagline {
+        font-size: 13px;
+        margin-top: 10px;
       }
       /* Fix nav */
       nav {
