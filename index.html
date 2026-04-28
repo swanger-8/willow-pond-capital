@@ -168,6 +168,23 @@
       white-space: nowrap;
     }
 
+    @media (max-width: 768px) {
+      .company-name {
+        font-size: clamp(18px, 6vw, 32px);
+        white-space: normal;
+        word-break: break-word;
+        padding: 0 20px;
+        text-align: center;
+      }
+      nav {
+        padding: 16px 20px;
+      }
+      .logo-area {
+        width: auto;
+        padding: 12px;
+      }
+    }
+
     .company-tagline {
       margin-top: 20px;
       font-size: clamp(14px, 1.5vw, 20px);
