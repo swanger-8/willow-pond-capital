@@ -192,6 +192,10 @@
       .divider {
         display: none;
       }
+      /* Hide company name and tagline on mobile */
+      .company-block {
+        display: none;
+      }
       .company-name {
         font-size: 18px;
         white-space: normal;
@@ -203,6 +207,25 @@
       .company-tagline {
         font-size: 13px;
         margin-top: 10px;
+      }
+      /* Center and enlarge logo */
+      nav {
+        padding: 12px 16px;
+        justify-content: center;
+      }
+      .logo-area {
+        width: auto;
+        padding: 8px;
+      }
+      .logo-area img {
+        width: 160px !important;
+        height: auto !important;
+      }
+      /* Fix bottom black bar */
+      html, body {
+        height: 100%;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
       }
       /* Fix nav */
       nav {
